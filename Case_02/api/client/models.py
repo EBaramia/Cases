@@ -5,7 +5,7 @@ import pytz
 
 
 
-class ClientModel(models.Model):
+class Client(models.Model):
     TIMEZONES = tuple(zip(pytz.all_timezones, pytz.all_timezones))
     
     phone = models.BigIntegerField(

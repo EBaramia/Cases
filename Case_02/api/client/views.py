@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Client
+from .serializer import ClientSerializers
 
-
-def test_view(request):
-    return render(request, 'client/test.html')
+class ClientViewset(viewsets.ModelViewSet):
+    queryset = Client.objects.all()
+    serializer_class = ClientSerializers

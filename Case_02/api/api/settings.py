@@ -34,11 +34,12 @@ DEFAULT_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',    
 ]
 
 DOWNLOADED_APPS = [
     'rest_framework',
+    'drf_yasg',
 ]
 
 CREATED_APPS = [

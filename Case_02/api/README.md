@@ -1,3 +1,4 @@
+![MasterHead](https://github.com/EBaramia/Cases/blob/main/Case_02/api/gif_file.gif)
 <h1>Сервис уведомлений</h1>
 <h3>Задача</h3>
 <p>Необходимо разработать сервис управления рассылками API администрирования и получения статистики.</p>

@@ -1,4 +1,3 @@
-from django.core.exceptions import ValidationError
 from client.models import Tag, CodeOperator
 from django.db import models
 from django.utils import timezone
@@ -22,10 +21,10 @@ class Post(models.Model):
         verbose_name='Operator code',
         help_text='Select the operator code for customers.'
     )
-    filter_teg = models.ManyToManyField(
+    filter_tag = models.ManyToManyField(
         Tag,
-        db_column='teg',
-        verbose_name='Teg',
+        db_column='tag',
+        verbose_name='Tag',
         help_text='Select customer Tag.'
     )
     post_end = models.DateTimeField(
@@ -34,3 +33,7 @@ class Post(models.Model):
         help_text='Specify the date and time when the mailing ends.',
         default=timezone.now(),
     )
+
+    def __str__(self):
+        return self.content
+    

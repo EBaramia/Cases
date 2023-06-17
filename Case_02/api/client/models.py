@@ -5,7 +5,7 @@ import pytz
 
 class Tag(models.Model):
     tag = models.CharField(
-        db_column='teg',
+        db_column='tag',
         verbose_name='Tag',
         help_text='Create a new tag.',
         max_length=50
